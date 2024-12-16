@@ -1,0 +1,868 @@
+*{
+    margin: 0;
+}
+
+/*Navigation Bar Start*/
+body{
+    font-family: 'Poppins';font-size: 20px;
+    background-color: #008080;
+    border-radius: 20px;
+}
+
+#logo{
+    height: 70px;
+    width: auto;
+    margin-left: 10px;
+    border-radius: 30px;
+}
+
+header{
+    background-color: #008080;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1{
+    color: #e4e6e8;
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+nav a{
+    color: #e4e6e8;
+    text-decoration: none;
+    margin-right: 10px;
+    display: inline-block;
+    padding: 0px 10px;
+    transition: all 0.3s ease 0s;
+    font-weight: bold;
+}
+nav a:hover{
+    color: #ff6f61;
+}
+/*Navigation Bar End*/
+
+
+/*Home Page Start*/
+#mainimg1 {
+    display: block;
+    width: 98.5%; /* Restricts the image width to a maximum of 90% of its container */
+    margin: auto;
+    height: 600px;
+    object-fit: cover; 
+    border-radius: 20px; /* Optional: Adds rounded corners */
+}
+
+
+.sec01-ul-topic{
+    font-size: 50px;
+    font-weight: bold;
+    color: #008080;
+    list-style-type: square;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.sec01-ul-points li{
+    font-size: 25px;
+    list-style-type: none;
+    color: #414141;
+    line-height: 1.8; /* This makes the paragraph nicely spaced */
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Common styles for sec02, sec03, sec04 to align image and text in a row */
+#sec02, #sec04{
+    display: flex;
+    align-items: center;
+    background-color: #e4e6e8;
+    color: #00796b;
+    padding: 40px 30px;
+    margin-top: 20px;
+    border-radius: 30px;
+    width: 90%; /* Make section take full width */
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 8px 2px #414141;
+    transition: transform 0.3s ease;
+    justify-content: space-between; /* Space between image and text */
+}
+
+#sec03 {
+    display: flex;
+    align-items: center;
+    background-color: #e4e6e8;
+    color: #00796b;
+    padding: 40px 30px;
+    margin-top: 20px;
+    border-radius: 30px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 8px 2px red;
+    transition: transform 0.3s ease;
+    justify-content: space-between;
+    flex-direction: row-reverse; /* This will reverse the order of the image and text */
+}
+
+#sec02 img, #sec04 img {
+    width: 30%; /* Make the image take 40% of the row */
+    height: 250px;
+    border-radius: 15px;
+}
+
+#sec03 img{
+    width: 30%; /* Make the image take 40% of the row */
+    height: 250px;
+    border-radius: 15px;
+}
+
+#sec02 h2, #sec03 h2, #sec04 h2 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#sec02 p, #sec04 p {
+    color: #414141;
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.6; /* This makes the paragraph nicely spaced */
+}
+
+#sec03 p {
+    color: #414141;
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.6; /* This makes the paragraph nicely spaced */
+}
+
+
+/* Hover effects for all sections */
+#sec01:hover, #sec02:hover, #sec03:hover, #sec04:hover, #sec05:hover {
+    transform: scale(1.05);
+}
+
+#sec05, #sec01{
+    background-color: #e4e6e8;
+    color: #00796b;
+    padding: 15px;
+    margin: 15px auto;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    font-size: 20px;
+    width: 90%;
+    align-items:center;
+    box-shadow: 5px 8px 2px #414141;
+    transition: transform 0.3s ease;
+}
+
+#sec05 ol li{
+    color: #414141;
+}
+
+#sec05 ul li {
+    color: #008080;
+    font-size: 50px;
+    list-style-type: square;
+    font-weight: bold;
+}
+
+/*Home Page End*/
+
+/*About us Page Starts*/
+.section {
+    margin: 20px auto;
+    padding: 15px;
+    width: 90%;
+    background-color: #e4e6e8;
+    color: #00796b;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 50px;
+    box-shadow: 5px 8px 2px #414141;
+}
+
+.section img {
+    transition: transform 0.3s ease;
+}
+
+.section img:hover {
+    transform: scale(1.05);
+}
+
+/* Flexbox container to place image and paragraph side by side */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.image-content, .text-content {
+    flex: 1;
+    max-width: 45%;
+    padding: 20px;
+}
+
+/* Ensure images and iframes fill their container */
+.section img, .section iframe {
+    width: 100%;
+    height: 350px;
+    border-radius: 10px; /* Optional rounded corners */
+}
+
+/* Paragraph styling for full section width */
+.section p {
+    padding: 0;
+    box-sizing: border-box;
+    color: #414141;
+    text-align: left;
+    margin: 20px 0;
+}
+
+/* List styling */
+.section ul {
+    list-style-type: square;
+    margin-left: 40px;
+    color: #008080;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 8px; /* Rounded corners for the table */
+    overflow: hidden; /* Ensure rounded corners are visible */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+thead {
+    background-color:#544b4b; /* Dark teal background for header */
+    color: white;
+}
+
+th, td {
+    padding: 12px 15px; /* Adjusted padding for better spacing */
+    border-bottom: 1px solid #ddd; /* Subtle bottom border */
+}
+
+th {
+    font-weight: bold;
+    text-transform: uppercase; /* Uppercase text for header */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e0f2f1; /* Lighter teal for even rows */
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff; /* White for odd rows for better contrast */
+}
+
+tbody tr:hover {
+    background-color: #cfd8dc; /* Subtle hover effect */
+}
+
+tfoot td {
+    font-weight: bold;
+    background-color: #e4e6e8;
+    text-align: center;
+    padding: 12px; /* Consistent padding for footer */
+}
+
+caption {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+    text-align: left;
+}
+
+table caption {
+    display: table-caption; /* Caption styling for clarity */
+}
+
+/*About us Page End*/
+
+/*services Page Start*/
+#sec01 p {
+    color: #414141;
+}
+/*services Page End*/
+
+
+fieldset {
+    border: 2px solid #00796b;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+legend {
+    padding: 0 10px;
+    font-weight: bold;
+    color: #00796b;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #00796b;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+#form01, #form02, #form03, #form04{
+    background-color: #e4e6e8;
+    color: #00796b;
+    padding: 15px;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#form01 p{
+    color: #414141;
+}
+
+#submit01, #reset01 {
+    background-color: #e4e6e8;
+    color: #00796b;
+    padding: 10px 120px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 25px;
+}
+
+#submit01:hover {
+    background-color:#22ff05;
+}
+
+#reset01:hover {
+    background-color:#ff6f61;
+}
+
+.doctorgrid{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: #e4e6e8;
+    padding: 30px;
+    border-radius: 15px;
+    justify-content: center;
+}
+#docmainimg {
+    display: block;
+    width: 100%; 
+    height: 600px;
+    margin: auto;
+    object-fit: cover;
+    border-radius: 20px; /* Optional: Adds rounded corners */
+    margin-bottom: 20px;
+}
+
+#i1{
+    background-size: cover;
+    border: 2px #008080 solid;
+    border-radius: 10px;
+}
+
+#i1:hover{
+    transform: scale(1.05);
+}
+
+#i1 img{
+    width: 465px;
+    height: 450px;
+    border-radius: 10px;
+    border: #008080 solid 1px;
+}
+
+.doc{
+    text-align: center;
+    color: #414141;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Poppins';
+}
+
+.details{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 15px;
+    font-family: 'Poppins';
+    font-size: 20px;
+}
+#specialize{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: #414141;
+    background-color: #e4e6e8;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    border: 2px #ff6f61 solid;
+    transition: transform 0.3s ease; /* Add smooth transition */
+    width: 100%;
+}
+
+#specialize:hover{
+    transform: scale(0.9);
+}
+
+
+/*Footer Starts*/
+
+footer {
+    background-color: #414141;
+    padding: 20px 40px;
+    margin-top: 15px;
+    margin-right: 0; /* Ensures no right margin */
+    margin-left: 0;  /* Ensures no left margin */
+    width: 100%; /* Ensures full width */
+    box-sizing: border-box; /* Includes padding in the width */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left {
+    display: flex;
+    align-items: left;
+}
+
+.footer-logo {
+    height: 50px;
+    width: auto;
+    margin-right: 20px;
+}
+
+.footer-left p {
+    margin: 20px 0;
+    color: #e4e6e8;
+    font-size: 20px;
+}
+
+.footer-right ul {
+    list-style: none;
+}
+
+.footer-right ul li {
+    margin-bottom: 10px;
+}
+
+.footer-right ul li a {
+    color: #e4e6e8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-right ul li a:hover {
+    text-decoration: underline;
+    color: #ff6f61;
+}
+
+.footer-bottom {
+    color: #e4e6e8;
+}
+
+.footer-bottom p {
+    font-size: 16px;
+    color: #e4e6e8;
+    font-weight: bold;
+}
+/*Footer End*/
+/* Home Page Start */
+
+/* Adjustments for mobile view */
+@media (max-width: 768px) {
+    #mainimg1 {
+        width: 100%; /* Take full width of the container */
+        height: auto; /* Adjust height automatically to maintain aspect ratio */
+        margin-left: 15px;
+    }
+
+    .sec01-ul-topic {
+        font-size: 28px; /* Further reduce font size for small screens */
+    }
+
+    .sec01-ul-points li {
+        font-size: 18px;
+        margin: 5px 0; /* Tighter margins for better fit */
+    }
+
+    /* Flex sections - stack image and text vertically on mobile */
+    #sec02, #sec03, #sec04 {
+        display: block; /* Remove flex and stack items */
+        padding: 20px 15px; /* Reduce padding for smaller screens */
+        width: 100%; /* Make sure it takes up the full width of the screen */
+        box-shadow: none; /* Remove shadow on mobile for cleaner look */
+        margin-top: 15px; /* Adjust margin between sections */
+        margin-right: 5px;
+    }
+
+    #sec02 img, #sec03 img, #sec04 img {
+        width: 100%; /* Full width of the container */
+        height: auto; /* Adjust the height to maintain aspect ratio */
+        margin-bottom: 15px; /* Space between image and text */
+    }
+
+    #sec02 h2, #sec03 h2, #sec04 h2 {
+        font-size: 22px; /* Further reduce heading size for smaller screens */
+    }
+
+    #sec02 p, #sec03 p, #sec04 p {
+        font-size: 16px; /* Reduce paragraph font size */
+        line-height: 1.5; /* Keep readability */
+    }
+
+    #sec05, #sec01 {
+        padding: 10px; /* Reduce padding */
+        font-size: 16px; /* Smaller text for better fit */
+        width: 100%; /* Ensure full width */
+    }
+
+    #sec05 ol li, #sec05 ul li {
+        font-size: 20px; /* Adjust font size of list items */
+    }
+}
+
+/* Home Page End */
+/* Mobile Query - For screens smaller than 768px */
+@media (max-width: 768px) {
+    footer {
+        padding: 15px; /* Adjust padding for smaller screens */
+        margin: 0; /* Remove any default margin */
+        width: 100%; /* Full viewport width */
+        box-sizing: border-box; /* Ensure padding is included in width */
+        background-color: #414141; /* Ensure background color covers the full width */
+    }
+
+    .footer-container {
+        display: block; /* Stack content vertically */
+        text-align: center; /* Center text and content */
+        margin: 0 auto; /* Center the container */
+        max-width: 100%; /* Ensure the container does not exceed viewport width */
+    }
+
+    .footer-left, .footer-right {
+        margin-bottom: 20px;
+    }
+
+    .footer-logo {
+        margin: 0 auto 10px auto; /* Center the logo */
+        display: block;
+    }
+
+    .footer-left p {
+        font-size: 16px; /* Reduce font size */
+    }
+
+    .footer-right ul li {
+        margin-bottom: 5px;
+    }
+
+    .footer-right ul li a {
+        font-size: 16px;
+    }
+
+    .footer-bottom p {
+        font-size: 14px;
+    }
+}
+@media (max-width: 768px) {
+    .section {
+        padding: 10px; /* Reduce padding for smaller screens */
+        width: 100%; /* Ensure full width */
+    }
+
+    .flex-container {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center; /* Center align content */
+    }
+
+    .image-content, .text-content {
+        max-width: 100%; /* Ensure full width on smaller screens */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .section img, .section iframe {
+        height: auto; /* Adjust height for better aspect ratio */
+    }
+
+    .section p {
+        font-size: 18px; /* Reduce font size for readability */
+    }
+
+    .section ul {
+        margin-left: 20px; /* Reduce margin for better fit */
+    }
+
+    table {
+        font-size: 14px; /* Reduce font size */
+    }
+
+    th, td {
+        padding: 8px 10px; /* Adjust padding for smaller screens */
+    }
+
+    caption {
+        font-size: 16px; /* Reduce caption font size */
+    }
+}
+
+/* About us Page End */
+
+@media (max-width: 768px) {
+    #sec01, #sec03 {
+      padding: 10px;
+      text-align: center;
+    }
+  
+    #sec03 img, 
+    #sec03 iframe {
+      width: 100%;
+      height: auto;
+    }
+  
+    #sec03 div {
+      margin-top: 15px;
+    }
+  
+    ul {
+      padding-left: 0;
+      list-style-type: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .doctorgrid {
+        flex-direction: column; /* Stack items vertically */
+        padding: 20px;
+        gap: 15px;
+    }
+
+    #docmainimg {
+        margin: 20px;
+        height: auto; /* Let the image adjust its height based on the width */
+        width: 100%; /* Make sure the image takes the full width on mobile */
+    }
+
+    #i1 img {
+        width: 100%; /* Make the image responsive */
+        height: auto; /* Adjust height automatically */
+    }
+
+    .doc {
+        font-size: 24px; /* Adjust font size for mobile */
+    }
+
+    .details {
+        font-size: 18px; /* Slightly reduce the font size */
+        padding: 10px;
+    }
+
+    #specialize {
+        font-size: 36px; /* Reduce font size for mobile */
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    fieldset {
+        padding: 15px;
+    }
+
+    input, select, textarea {
+        padding: 8px;
+        font-size: 18px; /* Slightly smaller font size */
+    }
+
+    #form01, #form02, #form03, #form04 {
+        margin: 10px; /* Reduce side margins */
+        padding: 10px;
+        font-size: 18px; /* Adjust font size for mobile */
+    }
+
+    #submit01, #reset01 {
+        padding: 10px 60px; /* Reduce button padding */
+        font-size: 18px;
+        margin: 15px; /* Reduce margins for buttons */
+    }
+}
+
+@media (max-width: 768px){
+form {
+    margin: 0; /* Remove excess margins for better fit */
+}
+
+fieldset {
+    padding: 10px;
+    font-size: 16px;
+}
+
+input, select, textarea {
+    width: 100%; /* Full width for form elements */
+    font-size: 16px; /* Slightly smaller font size for mobile */
+    padding: 8px; /* Adjust padding for smaller screens */
+}
+
+#form01, #form02, #form03, #form04 {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+@media(max-width: 768px) {
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 10px;
+    }
+  
+    #logo {
+      width: 80px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+  
+    #h1 {
+      font-size: 1.5em;
+      margin-bottom: 15px;
+    }
+  
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+  
+    nav a {
+      font-size: 16px;
+      padding: 5px 10px;
+      text-decoration: none;
+    }
+  
+    main img#docmainimg {
+      width: 100%;
+      height: auto;
+    }
+}
+
+/* Buttons */
+#submit01, #reset01 {
+    width: 80%;
+    padding: 10px; /* Adjust padding for mobile */
+    margin-left: 40px;}
+}
+
+
+.background {
+    background: url('background-wave.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+p {
+    font-size: 14px;
+}
+
+p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+  
